@@ -6,6 +6,12 @@ public class Fibonacci {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number of times");
         num = in.nextInt();
-
+        System.out.println("Fibonacci Series of the number is:");
+        for (int i=0; i<num; i++) {
+            a = b;
+            b = c;
+            c = a+b;
+            System.out.println(a + "");    //if you want to print on the same line, use print()
+        }
     }
 }
